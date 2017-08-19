@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Dorsa");
+html {
+  box-sizing: border-box; }
+  html body {
+    margin: 0; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+.panels {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; }
+  .panels .panel {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    .panels .panel .p {
+      display: flex;
+      flex: 1 0 auto;
+      justify-content: center;
+      align-items: center; }
+    .panels .panel.open {
+      flex: 5; }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  right: 1rem; }
+
+@media screen and (min-width: 62.5rem) {
+  .panels {
+    flex-direction: row; } }
+
+html {
+  background: #000000;
+  font-family: 'Dorsa', cursive;
+  letter-spacing: 7px;
+  font-size: 16px; }
+
+.header {
+  position: absolute;
+  width: 34%;
+  top: 1rem;
+  left: 1rem; }
+
+img {
+  max-width: 100%; }
+
+.panel {
+  background: #ffffff;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 800;
+  transition: font-size 0.85s ease-out, flex 0.85s ease-out, background 0.9s;
+  background-size: cover;
+  background-position: center; }
+  .panel .p {
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-shadow: none;
+    margin: 0;
+    width: 100%;
+    transition: transform 0.9s; }
+    .panel .p:first-child {
+      display: none; }
+  .panel.open {
+    font-size: 3rem; }
+    .panel.open .p:first-child {
+      transform: translateY(-40%) translateX(26%); }
+
+.panel1 {
+  background-image: url("../img/politics.jpg"); }
+
+.panel2 {
+  background-image: url("../img/wild.jpg"); }
+
+.panel3 {
+  background-image: url("../img/dragon-snake.jpg"); }
+
+.panel4 {
+  background-image: url("../img/paint.JPG"); }
+
+.panel5 {
+  background-image: url("../img/memory.JPG"); }
+
+.footer li {
+  list-style: none; }
+  .footer li a {
+    color: #000000; }
+
+.footer .fa-4x {
+  font-size: 8em; }
+
+@media screen and (min-width: 64.9rem) {
+  .header {
+    width: 16%; }
+  .panel .p:first-child {
+    transform: translateY(0);
+    display: flex;
+    font-size: 2.5em; } }
+
+/*# sourceMappingURL=styles.css.map */
