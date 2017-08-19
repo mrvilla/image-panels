@@ -37,6 +37,8 @@ img {
 
   &.open {
     font-size: 3rem;
+    box-shadow: -5px 0 60px $color-black, 6px 0 60px $color-black;
+    z-index: 2;
 
     .p {
 
