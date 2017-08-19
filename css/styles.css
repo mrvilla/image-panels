@@ -24,7 +24,7 @@ html {
       justify-content: center;
       align-items: center; }
     .panels .panel.open {
-      flex: 5; }
+      flex: 8; }
 
 .footer {
   position: absolute;
@@ -33,7 +33,9 @@ html {
 
 @media screen and (min-width: 62.5rem) {
   .panels {
-    flex-direction: row; } }
+    flex-direction: row; }
+    .panels .panel.open {
+      flex: 5; } }
 
 html {
   background: #000000;
@@ -66,7 +68,9 @@ img {
     width: 100%;
     transition: transform 0.9s; }
     .panel .p:first-child {
-      display: none; }
+      transform: translateY(0);
+      display: flex;
+      font-size: 2.5em; }
   .panel.open {
     font-size: 3rem;
     box-shadow: -5px 0 60px #000000, 6px 0 60px #000000;
@@ -99,10 +103,6 @@ img {
 
 @media screen and (min-width: 64.9rem) {
   .header {
-    width: 16%; }
-  .panel .p:first-child {
-    transform: translateY(0);
-    display: flex;
-    font-size: 2.5em; } }
+    width: 16%; } }
 
 /*# sourceMappingURL=styles.css.map */

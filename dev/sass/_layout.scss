@@ -30,7 +30,7 @@ html {
     }
 
     &.open {
-      flex: 5;
+      flex: 8;
     }
   }
 }
@@ -44,5 +44,11 @@ html {
 @media screen and (min-width: 62.500rem) {
   .panels {
     flex-direction: row;
+
+    .panel {
+      &.open {
+        flex: 5;
+      }
+    }
   }
 }

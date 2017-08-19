@@ -31,7 +31,9 @@ img {
     transition:transform 0.9s;
 
     &:first-child  {
-      display: none;
+      transform: translateY(0);
+      display: flex;
+      font-size: 2.5em;
     }
   }
 
@@ -41,7 +43,6 @@ img {
     z-index: 2;
 
     .p {
-
       &:first-child {
         transform: translateY(-40%) translateX(26%);
       }
@@ -74,11 +75,11 @@ img {
   }
 
   .panel {
-    .p {
-      &:first-child {
-        transform: translateY(0);
-        display: flex;
-        font-size: 2.5em;
+    &.open {
+      .p {
+        &:first-child {
+
+        }
       }
     }
   }
