@@ -1,7 +1,7 @@
 {
   "name": "lesson-5",
   "version": "0.0.1",
-  "description": "panels to present items",
+  "description": "panels to present images",
   "author": "Enrique Villa",
   "license": "MIT",
   "devDependencies": {
