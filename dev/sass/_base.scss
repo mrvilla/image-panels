@@ -4,12 +4,6 @@ html {
   letter-spacing: 7px;
   font-size: 16px;
 }
-.header {
-  position: absolute;
-  width: 34%;
-  top: 1rem;
-  left: 1rem;
-}
 img {
   max-width: 100%;
 }
@@ -41,7 +35,6 @@ img {
     font-size: 3rem;
     box-shadow: -5px 0 60px $color-black, 6px 0 60px $color-black;
     z-index: 2;
-
     .p {
       &:first-child {
         transform: translateY(-40%) translateX(26%);
@@ -58,21 +51,17 @@ img {
 
 
 .footer {
-  li {
-    list-style: none;
-    a {
-      color: $color-black;
-    }
-  }
-  .fa-4x {
-    font-size: 8em;
+  .artwork {
+    font-family: sans-serif;
+    color: white;
+    z-index: 2;
+    position: relative;
+    top: 4px;
+    text-align: center;
   }
 }
 
 @media screen and (min-width: 64.900rem) {
-  .header {
-    width: 16%;
-  }
 
   .panel {
     &.open {
